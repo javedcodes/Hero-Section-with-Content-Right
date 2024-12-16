@@ -1,0 +1,210 @@
+/* Include font from Google Fonts or a custom source */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+:root {
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --fontPrimary: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontPrimary);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Typography Styles */
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+
+@media only screen and (min-width: 0rem) {
+    #hero-856 {
+        text-align: center;
+        padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+        background-color: #f7f7f7;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+
+    #hero-856 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #hero-856 .cs-content {
+        max-width: 39.375rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #hero-856 .cs-title {
+        font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 23ch;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+
+    #hero-856 .cs-text {
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        max-width: 33.1875rem;
+        margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
+        color: var(--bodyTextColor);
+    }
+
+    #hero-856 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+
+    #hero-856 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+
+    #hero-856 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+
+    #hero-856 .cs-picture {
+        width: 100%;
+        max-width: 35.625rem;
+        height: clamp(25rem, 95vw, 44.5rem);
+        border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
+        overflow: hidden;
+        display: block;
+        position: relative;
+    }
+
+    #hero-856 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    #hero-856 .cs-wave {
+        width: 320%;
+        height: auto;
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -1px;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    #hero-856 {
+        text-align: left;
+    }
+
+    #hero-856 .cs-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #hero-856 .cs-content {
+        width: 40vw;
+        flex: none;
+        align-items: flex-start;
+        order: 2;
+    }
+
+    #hero-856 .cs-title,
+    #hero-856 .cs-text {
+        text-align: left;
+    }
+
+    #hero-856 .cs-picture {
+        height: clamp(38.9375rem, 60vw, 50.875rem);
+    }
+
+    #hero-856 .cs-wave {
+        width: 200%;
+    }
+}
